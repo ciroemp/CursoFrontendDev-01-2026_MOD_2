@@ -14,14 +14,14 @@ body {
     margin: 0;
     font-family: "Fjalla One", sans-serif;
     font-style: normal;
-    background-color: rgb(124, 163, 175);
+    
 }
 
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 20px;
-    justify-content: center;
+    place-content: center;
 
 }
 
@@ -47,6 +47,7 @@ body {
     padding: 10px;
     border: #000000 solid 1px;
     border-radius: 20px;
+    margin-top: 12px;
 
 }
 
@@ -57,6 +58,20 @@ body {
 .product-info figure img {
     width: 45px;
     height: 45px;
+}
+
+.product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);   
+    margin-top: 0px; 
+    margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2) {    
+    font-size: var(--sm);   
+    margin-top: 16px; 
+    margin-bottom: 4px;
+    color: var(--very-light-pink);
 }
 
 @media (max-width: 640px) {
